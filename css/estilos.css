@@ -1,0 +1,121 @@
+/*
+Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<style>
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+</style>
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/*Generales*/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+html, body{
+    height: 100%;
+    margin: 0%;
+    padding: 0;
+  }
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+}
+  /*Generales
+
+/* Estilo main Principal*/
+
+.principal{
+    display: flex;
+    max-width: 768px;
+    min-width: 320px;
+}
+
+/*estilo columna principal*/
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 2rem;
+    overflow: hidden;
+    width: 25%;
+    transition: width .3s ease-in-out;
+    cursor: pointer;
+}
+
+.columna.activa{
+    width: 50%;
+   
+}
+
+/*estilos a las columnas independientes*/
+
+.columna:first-of-type{
+    border-radius: 1rem 0 0 1rem;
+}
+
+.columna:last-of-type{
+    border-radius: 0 1rem 1rem 0;
+}
+
+
+.columna_uno{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.columna_dos{
+    background-color:hsl(184, 100%, 22%);
+}
+
+.columna_tres{
+    background-color: hsl(179, 100%, 13%);
+}
+
+/*estilos a las columnas independientes*/
+
+/*estilo a los titulos de las columnas*/
+
+.titulo{
+    font-family: 'Big Shoulders Display';
+    color: hsl(0, 0%, 95%);
+}
+
+.texto{
+    font-size: 14px;
+    margin-bottom: 4rem;
+    flex-grow: 1;
+    color: hsla(0, 0%, 100%, 0.75)
+}
+
+/*estilos a los botones*/
+
+.boton{
+    text-decoration: none;
+    background-color:hsl(0, 0%, 95%);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 14px;
+}
+
+.columna_uno .boton{
+    color: hsl(31, 77%, 52%);
+}
+
+.columna_dos .boton{
+    color: hsl(184, 100%, 22%);
+}
+
+.columna_tres .boton{
+   color: hsl(179, 100%, 13%);
+}
+
